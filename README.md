@@ -1,0 +1,1 @@
+# JD_SVG_LOGO
