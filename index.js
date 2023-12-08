@@ -18,7 +18,7 @@ inquirer
             type: 'list',
             name: 'shape',
             message: 'Select a shape for your logo',
-            choices: ['Circle', 'Triangle', 'Rectangle']
+            choices: ['Circle', 'Triangle', 'Square']
         },
         {
             type: 'Input',
