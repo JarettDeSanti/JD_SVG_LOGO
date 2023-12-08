@@ -1,7 +1,12 @@
+// created variables for requiring/importing "inquirer", "fs", and "circle, triangle, square" from shapes.js
+
 const inquirer = require("inquirer");
 const fs = require('fs');
 const { Circle, Triangle, Square } = require("./lib/shapes.js");
 
+
+// created the prompt to display in terminal for the 4 questions needed to meet requirements for project
+// this is an array with questions 
 inquirer
     .prompt([
         {
@@ -27,7 +32,8 @@ inquirer
         },
     ])
 
-
+// displays "Generated logo.svg" in the console and creates new Circle, Triangle, or Square using the input from questions
+// then creates the new logo.svg file
     .then((answers) => {
         console.log("Generated logo.svg")
         var svgString = ""
