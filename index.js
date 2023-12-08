@@ -1,0 +1,41 @@
+const inquirer = require("inquirer");
+const fs = require('fs');
+const {Circle, Triangle, Square} = require("./lib/shapes.js");
+
+inquirer
+    .prompt([
+        {
+            type: 'Input',
+            name: 'text',
+            message: 'Please enter three characters for your logo e.g. THX, CJP...'
+        },
+        {
+            type: 'Input',
+            name: 'textColor',
+            message: 'What color text do you want for your logo? - e.g. blue or #0000FF...',
+        },
+        {
+            type: 'list',
+            name: 'shape',
+            message: 'Select a shape for your logo',
+            choices: ['Circle', 'Triangle', 'Rectangle']
+        },
+        {
+            type: 'Input',
+            name: 'shapeColor',
+            message: 'What color do you want your shape to be? - e.g. blue or #0000FF...',
+        },
+    ])
+
+
+    .then((answers) => {
+        console.log(answers)
+        var svgString = ""
+        if (answers.shape === "Circle") {
+            const circle = new Circle(answers.text, answers.textColor, answers.shapeColor)
+            svgString = circle.renderStart() + circle.insertShape() + circle.renderText() + circle.renderEnd() 
+        }
+
+
+    fs.writeFileSync('logo.svg', svgString)
+});
