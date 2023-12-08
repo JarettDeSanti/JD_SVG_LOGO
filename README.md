@@ -15,7 +15,7 @@ In order to use this SVG Logo generator, the user must open the index.js file lo
 ## Links
 
 Github repository URL: https://github.com/JarettDeSanti/JD_SVG_LOGO <br>
-Demo URL: https://drive.google.com/file/d/1IW_3iOcKTyVeMXr29KL5XyoU3sMN224J/view
+Demo URL: https://drive.google.com/file/d/1xevvxKHJz88Ms4nst1GZ2boSt3G6OQdf/view
 
 ## Screenshot
 
