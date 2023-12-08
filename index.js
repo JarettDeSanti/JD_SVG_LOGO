@@ -29,7 +29,7 @@ inquirer
 
 
     .then((answers) => {
-        console.log(answers)
+        console.log("Generated logo.svg")
         var svgString = ""
         if (answers.shape === "Circle") {
             const circle = new Circle(answers.text, answers.textColor, answers.shapeColor)
