@@ -7,7 +7,7 @@ inquirer
         {
             type: 'Input',
             name: 'text',
-            message: 'Please enter three characters for your logo e.g. THX, CJP...'
+            message: 'Please enter three characters for your logo e.g. SVG, THX, CJP...'
         },
         {
             type: 'Input',
